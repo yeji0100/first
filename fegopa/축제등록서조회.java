@@ -1,34 +1,29 @@
-
 package fegopa;
 
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-public class 일반신청현황조회 {
+public class 축제등록서조회 {
 
-	private JFrame frame;
-	private JTable table;
+	private JFrame frame; //모든 축제 조회 창 선 -> 선택한 축제 등록서 조회 창? 이렇게 연결시켜야할까?
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					일반신청현황조회 window = new 일반신청현황조회();
-					window.frame.setVisible(true); 
+					축제등록서조회 window = new 축제등록서조회();
+					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -36,10 +31,7 @@ public class 일반신청현황조회 {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
-	public 일반신청현황조회() {
+	public 축제등록서조회() {
 		initialize();
 	}
 
@@ -50,13 +42,12 @@ public class 일반신청현황조회 {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 359, 520);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
-		
+
 		JPanel panel = new JPanel();
 		panel.setBounds(12, 10, 319, 461);
 		panel.setBackground(new Color(255,0,0,0));
 		frame.getContentPane().add(panel);
-		
+
 		JButton btn_뒤로가기 = new JButton("");
 		btn_뒤로가기.setBounds(256, 0, 63, 53);
 		btn_뒤로가기.addActionListener(new ActionListener() {
@@ -65,20 +56,17 @@ public class 일반신청현황조회 {
 		});
 		panel.setLayout(null);
 		panel.add(btn_뒤로가기);
-		
+
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(12, 84, 295, 356);
 		panel.add(scrollPane);
-		
-		table = new JTable();
-		scrollPane.setColumnHeaderView(table);
-		
-		
+
 		String url = getClass().getResource("").getPath();
-		Image image20 = new ImageIcon(url + "image/20.png").getImage();
-		JLabel lbl_img20 = new JLabel(new ImageIcon(image20.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
-		lbl_img20.setBounds(0, 0, 343, 481);
-		frame.getContentPane().add(lbl_img20);
+		Image image14 = new ImageIcon(url + "image/14.png").getImage();
+		JLabel lbl_img14 = new JLabel(new ImageIcon(image14.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
+		lbl_img14.setBounds(0, 0, 343, 481);
+		frame.getContentPane().add(lbl_img14);
 
 	}
+
 }
