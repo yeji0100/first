@@ -1,4 +1,4 @@
-package fegopa;
+package DAOVO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

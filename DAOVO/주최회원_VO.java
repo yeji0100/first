@@ -1,4 +1,4 @@
-package fegopa;
+package DAOVO;
 
 public class 주최회원_VO {
 	private String ID;

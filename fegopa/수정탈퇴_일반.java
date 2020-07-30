@@ -5,6 +5,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
+
+import DAOVO.일반회원_DAO;
+import DAOVO.일반회원_VO;
+
 import javax.swing.JTextField;
 import javax.swing.DropMode;
 import javax.swing.ImageIcon;

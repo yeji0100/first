@@ -1,4 +1,4 @@
-package fegopa;
+package DAOVO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,6 +16,7 @@ public class 부스_DAO {
 	//부스상태(대기,승인)변경 : updateBoothWait, updateBoothCommit
 	// selectAllBooth() : 등록된 모든 부스 조회(일반회원이 볼수있게)
 	//selectMyBooth() 로그인 중인 주최회원이 등록한 부스 열람
+	//showFestivalBoothCon : 축제id로 부스id와 부스 상태 조회 
 	
 
 	Connection conn = null;
@@ -202,6 +203,31 @@ public class 부스_DAO {
 		}
 		return condition;
 	}
+	
+	//showFestivalBoothCon 해당축제 부스id와 부스 상태 조회 
+		public ArrayList<부스VO> showFestivalBoothCon(String 축제id) {
+			ArrayList<부스VO> list = new ArrayList<부스VO>();
+			try {
+				getConn();
+				String sql = "select 부스id, 부스상태 from booth where 축제id = ?";
+
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, 축제id);
+				rs = pst.executeQuery();
+				while(rs.next()) {
+					String 부스id = rs.getString(1);
+					String 부스상태 = rs.getString(2);
+					부스VO vo = new 부스VO(부스id, 부스상태);
+					list.add(vo);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				close();
+			}
+			return list;
+		}
+	
 	
 	//부스상태(대기,승인)변경
 	public int updateBoothCommit(부스VO vo) {

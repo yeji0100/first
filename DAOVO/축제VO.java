@@ -1,4 +1,4 @@
-package fegopa;
+package DAOVO;
 
 public class √‡¡¶VO {
 	

@@ -5,6 +5,12 @@ import java.awt.Image;
 
 import javax.swing.JFrame;
 import javax.swing.JTextField;
+
+import DAOVO.일반회원_DAO;
+import DAOVO.일반회원_VO;
+import DAOVO.주최회원_DAO;
+import DAOVO.주최회원_VO;
+
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;

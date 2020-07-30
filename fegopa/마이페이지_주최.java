@@ -55,10 +55,22 @@ public class 마이페이지_주최 {
 		frame.getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_1_1 = new JButton("\uCD95\uC81C\uB4F1\uB85D");
+		btnNewButton_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				축제등록서1.main(null);
+			}
+		});
 		btnNewButton_1_1.setBounds(41, 155, 269, 48);
 		frame.getContentPane().add(btnNewButton_1_1);
 		
 		JButton btnNewButton_1_1_1 = new JButton("\uCD95\uC81C \uB4F1\uB85D\uC11C \uC218/\uC0AD");
+		btnNewButton_1_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				축제등록서_수정1.main(null);
+			}
+		});
 		btnNewButton_1_1_1.setBounds(41, 218, 269, 48);
 		frame.getContentPane().add(btnNewButton_1_1_1);
 		
