@@ -96,6 +96,8 @@ public class 수정탈퇴_주최 {
 		JButton btnNewButton = new JButton("\uB4A4\uB85C\uAC00\uAE30");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				마이페이지_주최.main(null);
 			}
 		});
 		btnNewButton.setBounds(153, 416, 128, 44);

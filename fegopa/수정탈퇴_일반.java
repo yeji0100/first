@@ -114,6 +114,8 @@ public class 수정탈퇴_일반 {
 		JButton btnNewButton = new JButton("\uB4A4\uB85C\uAC00\uAE30");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				마이페이지_일반.main(null);
 			}
 		});
 		btnNewButton.setBounds(153, 416, 128, 44);
@@ -184,5 +186,7 @@ public class 수정탈퇴_일반 {
 		JLabel lbl_img21 = new JLabel(new ImageIcon(image21.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
 		lbl_img21.setBounds(0, 0, 343, 481);
 		frame.getContentPane().add(lbl_img21);
+		
+		
 	}
 }

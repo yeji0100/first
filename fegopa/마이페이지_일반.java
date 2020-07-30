@@ -63,6 +63,12 @@ public class 마이페이지_일반 {
 		frame.getContentPane().add(btnNewButton_1_1_3);
 
 		JButton btnNewButton_1_1_4 = new JButton("\uAC1C\uC778\uC815\uBCF4 \uC218/\uD0C8");
+		btnNewButton_1_1_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				수정탈퇴_일반.main(null);
+			}
+		});
 		btnNewButton_1_1_4.setBounds(30, 405, 269, 66);
 		frame.getContentPane().add(btnNewButton_1_1_4);
 

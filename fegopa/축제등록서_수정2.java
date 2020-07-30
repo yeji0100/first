@@ -10,7 +10,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-public class 축제등록서_수정pg2 {
+public class 축제등록서_수정2 {
 
 	private JFrame frame;
 	private JTextField textField;
@@ -27,7 +27,7 @@ public class 축제등록서_수정pg2 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					축제등록서_수정pg2 window = new 축제등록서_수정pg2();
+					축제등록서_수정2 window = new 축제등록서_수정2();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -39,7 +39,7 @@ public class 축제등록서_수정pg2 {
 	/**
 	 * Create the application.
 	 */
-	public 축제등록서_수정pg2() {
+	public 축제등록서_수정2() {
 		initialize();
 	}
 

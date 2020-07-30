@@ -180,7 +180,7 @@ public class 주최회원_DAO {
 				String 주소 = rs.getString(3);
 				String 기관명 = rs.getString(4);
 				String 연락처 = rs.getString(5);
-				String logtime = rs.getString(8);
+				String logtime = rs.getString(6);
 				vo = new 주최회원_VO(id, pw, 주소, 기관명, 연락처, logtime);
 
 			}

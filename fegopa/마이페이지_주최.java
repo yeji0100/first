@@ -7,6 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class 마이페이지_주최 {
 
@@ -61,14 +63,32 @@ public class 마이페이지_주최 {
 		frame.getContentPane().add(btnNewButton_1_1_1);
 		
 		JButton btnNewButton_1_1_2 = new JButton("\uB098\uC758 \uCD95\uC81C \uB4F1\uB85D\uC11C \uC870\uD68C");
+		btnNewButton_1_1_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				축제등록서1.main(null);
+			}
+		});
 		btnNewButton_1_1_2.setBounds(41, 284, 269, 48);
 		frame.getContentPane().add(btnNewButton_1_1_2);
 		
 		JButton btnNewButton_1_1_3 = new JButton("\uBD80\uC2A4 \uC2E0\uCCAD\uC11C \uC870\uD68C");
+		btnNewButton_1_1_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				일반신청현황조회.main(null);
+			}
+		});
 		btnNewButton_1_1_3.setBounds(41, 342, 269, 48);
 		frame.getContentPane().add(btnNewButton_1_1_3);
 		
 		JButton btnNewButton_1_1_4 = new JButton("\uAC1C\uC778\uC815\uBCF4 \uC218/\uD0C8");
+		btnNewButton_1_1_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				수정탈퇴_주최.main(null);
+			}
+		});
 		btnNewButton_1_1_4.setBounds(41, 407, 269, 48);
 		frame.getContentPane().add(btnNewButton_1_1_4);
 		

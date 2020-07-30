@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
 
-public class 축제등록서1pg {
+public class 축제등록서1 {
 
 	private JFrame frame;
 	private JTextField textField;
@@ -30,7 +30,7 @@ public class 축제등록서1pg {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					축제등록서1pg window = new 축제등록서1pg();
+					축제등록서1 window = new 축제등록서1();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -42,7 +42,7 @@ public class 축제등록서1pg {
 	/**
 	 * Create the application.
 	 */
-	public 축제등록서1pg() {
+	public 축제등록서1() {
 		initialize();
 	}
 

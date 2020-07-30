@@ -72,9 +72,11 @@ public class 로그인페이지 {
 				일반회원_DAO 일반dao = new 일반회원_DAO();
 				
 				String result = 일반dao.logIN(일반vo);
+				일반dao.updateLogtime(아이디.getText());
 				
 				if (result != null) {
 					frame.dispose();
+					마이페이지_일반.main(null);
 				} else {
 				JOptionPane.showMessageDialog(null, "로그인실패 : 아이디 또는 비밀번호를 틀렸습니다.");
 				}
@@ -85,6 +87,10 @@ public class 로그인페이지 {
 		frame.getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("\uC77C\uBC18\uD68C\uC6D0\uAC00\uC785");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -105,9 +111,11 @@ public class 로그인페이지 {
 				주최회원_DAO 주최dao = new 주최회원_DAO();
 				
 				String result = 주최dao.logIN(주최vo);
+				주최dao.updateLogtime(아이디.getText());
 				
 				if (result != null) {
 					frame.dispose();
+					마이페이지_주최.main(null);
 				} else {
 				JOptionPane.showMessageDialog(null, "로그인실패 : 아이디 또는 비밀번호를 틀렸습니다.");
 				}
@@ -118,7 +126,13 @@ public class 로그인페이지 {
 		frame.getContentPane().add(btnNewButton_2);
 		
 		
-		JButton btnNewButton_1_1 = new JButton("\uC77C\uBC18\uD68C\uC6D0\uAC00\uC785");
+		JButton btnNewButton_1_1 = new JButton("\uC8FC\uCD5C\uD68C\uC6D0\uAC00\uC785");
+		btnNewButton_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				회원가입_주최.main(null);
+			}
+		});
 		btnNewButton_1_1.setBounds(99, 406, 150, 35);
 		frame.getContentPane().add(btnNewButton_1_1);
 
