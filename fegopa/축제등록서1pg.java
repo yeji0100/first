@@ -98,8 +98,8 @@ public class 축제등록서1pg {
 		
 		
 		
-		String img10 = "C:\\Users\\SMT082\\git\\FirstProject\\페고파1차프로젝트\\image\\10.png";
-		Image image10 = new ImageIcon(img10).getImage();
+		String url = getClass().getResource("").getPath();
+		Image image10 = new ImageIcon(url + "image/10.png").getImage();
 		JLabel lbl_img10 = new JLabel(new ImageIcon(image10.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
 		lbl_img10.setBounds(0, 0, 343, 481);
 		frame.getContentPane().add(lbl_img10);

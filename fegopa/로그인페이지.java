@@ -117,15 +117,16 @@ public class 로그인페이지 {
 		btnNewButton_2.setBounds(191, 287, 140, 52);
 		frame.getContentPane().add(btnNewButton_2);
 		
-		String img5 = "C:\\Users\\SMT082\\git\\FirstProject\\페고파1차프로젝트\\image\\5.png";
-		Image image5 = new ImageIcon(img5).getImage();
-		JLabel lbl_img5 = new JLabel(new ImageIcon(image5.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
-		lbl_img5.setBounds(0, 0, 343, 481);
-		frame.getContentPane().add(lbl_img5);
 		
 		JButton btnNewButton_1_1 = new JButton("\uC77C\uBC18\uD68C\uC6D0\uAC00\uC785");
 		btnNewButton_1_1.setBounds(99, 406, 150, 35);
 		frame.getContentPane().add(btnNewButton_1_1);
 
+		
+		String url = getClass().getResource("").getPath();
+		Image image5 = new ImageIcon(url + "image/5.png").getImage();
+		JLabel lbl_img5 = new JLabel(new ImageIcon(image5.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
+		lbl_img5.setBounds(0, 0, 343, 481);
+		frame.getContentPane().add(lbl_img5);
 	}
 }

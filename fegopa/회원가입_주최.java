@@ -153,8 +153,8 @@ public class 회원가입_주최 {
 		panel.add(lblNewLabel_5);
 		
 		
-		String img7 = "C:\\Users\\SMT082\\git\\FirstProject\\페고파1차프로젝트\\image\\7.png";
-		Image image7 = new ImageIcon(img7).getImage();
+		String url = getClass().getResource("").getPath();
+		Image image7 = new ImageIcon(url + "image/7.png").getImage();
 		JLabel lbl_img7 = new JLabel(new ImageIcon(image7.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
 		lbl_img7.setBounds(0, 0, 343, 481);
 		frame.getContentPane().add(lbl_img7);

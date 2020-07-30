@@ -52,12 +52,6 @@ public class 부스신청서_수정 {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
-		String img19 = "C:\\Users\\SMT082\\git\\FirstProject\\페고파1차프로젝트\\image\\19.png";
-		Image image19 = new ImageIcon(img19).getImage();
-		frame.getContentPane().setLayout(null);
-		JLabel lbl_img19 = new JLabel(new ImageIcon(image19.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
-		lbl_img19.setBounds(0, 0, 343, 481);
-		frame.getContentPane().add(lbl_img19);
 		
 		textField = new JTextField();
 		textField.setBounds(64, 84, 218, 21);
@@ -110,6 +104,11 @@ public class 부스신청서_수정 {
 		파일불러오기.setBounds(135, 392, 76, 23);
 		frame.getContentPane().add(파일불러오기);
 		
+		String url = getClass().getResource("").getPath();
+		Image image19 = new ImageIcon(url + "image/19.png").getImage();
+		JLabel lbl_img19 = new JLabel(new ImageIcon(image19.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
+		lbl_img19.setBounds(0, 0, 343, 481);
+		frame.getContentPane().add(lbl_img19);
 	}
 
 }

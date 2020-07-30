@@ -107,9 +107,8 @@ public class 축제등록서_수정pg2 {
 		btnNewButton_2.setBounds(222, 412, 77, 23);
 		frame.getContentPane().add(btnNewButton_2);
 		
-		String img13 = "C:\\Users\\SMT082\\git\\FirstProject\\페고파1차프로젝트\\image\\13.png";
-		Image image13 = new ImageIcon(img13).getImage();
-		frame.getContentPane().setLayout(null);
+		String url = getClass().getResource("").getPath();
+		Image image13 = new ImageIcon(url + "image/13.png").getImage();
 		JLabel lbl_img13 = new JLabel(new ImageIcon(image13.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
 		lbl_img13.setBounds(0, 0, 343, 481);
 		frame.getContentPane().add(lbl_img13);

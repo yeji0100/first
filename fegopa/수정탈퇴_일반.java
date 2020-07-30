@@ -7,10 +7,12 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.DropMode;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
+import java.awt.Image;
 
 public class ¼öÁ¤Å»Åð_ÀÏ¹Ý {
 
@@ -176,5 +178,11 @@ public class ¼öÁ¤Å»Åð_ÀÏ¹Ý {
 		lblNewLabel_7 = new JLabel("\uBCC0\uACBD\uD560 \uC0DD\uB144\uC6D4\uC77C");
 		lblNewLabel_7.setBounds(29, 401, 96, 15);
 		frame.getContentPane().add(lblNewLabel_7);
+		
+		String url = getClass().getResource("").getPath();
+		Image image21 = new ImageIcon(url + "image/21.png").getImage();
+		JLabel lbl_img21 = new JLabel(new ImageIcon(image21.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
+		lbl_img21.setBounds(0, 0, 343, 481);
+		frame.getContentPane().add(lbl_img21);
 	}
 }

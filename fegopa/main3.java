@@ -1,8 +1,12 @@
 package fegopa;
 
 import java.awt.EventQueue;
+import java.awt.Image;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.MouseAdapter;
@@ -104,6 +108,12 @@ public class main3 {
 		textField_2.setColumns(10);
 		textField_2.setBounds(25, 10, 42, 21);
 		panel_next.add(textField_2);
+		
+		String url = getClass().getResource("").getPath();
+		Image image4 = new ImageIcon(url + "image/4.png").getImage();
+		JLabel lbl_img4 = new JLabel(new ImageIcon(image4.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
+		lbl_img4.setBounds(0, 0, 343, 481);
+		frame.getContentPane().add(lbl_img4);
 		
 	}
 }

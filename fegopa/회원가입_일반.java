@@ -179,8 +179,8 @@ public class 회원가입_일반 {
 		panel.add(lblNewLabel_6);
 		
 		
-		String img8 = "C:\\Users\\SMT082\\git\\FirstProject\\페고파1차프로젝트\\image\\8.png";
-		Image image8 = new ImageIcon(img8).getImage();
+		String url = getClass().getResource("").getPath();
+		Image image8 = new ImageIcon(url + "image/8.png").getImage();
 		JLabel lbl_img8 = new JLabel(new ImageIcon(image8.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
 		lbl_img8.setBounds(0, 0, 343, 481);
 		frame.getContentPane().add(lbl_img8);

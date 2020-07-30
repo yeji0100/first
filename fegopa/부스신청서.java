@@ -100,13 +100,11 @@ public class 부스신청서 {
 		파일불러오기.setBounds(127, 387, 97, 23);
 		frame.getContentPane().add(파일불러오기);
 		
-		String img18 = "C:\\Users\\SMT082\\git\\FirstProject\\페고파1차프로젝트\\image\\18.png";
-		Image image18 = new ImageIcon(img18).getImage();
-		frame.getContentPane().setLayout(null);
+		String url = getClass().getResource("").getPath();
+		Image image18 = new ImageIcon(url + "image/18.png").getImage();
 		JLabel lbl_img18 = new JLabel(new ImageIcon(image18.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
 		lbl_img18.setBounds(0, 0, 343, 481);
-		frame.getContentPane().add(lbl_img18);
-		
+		frame.getContentPane().add(lbl_img18);		
 		
 	}
 

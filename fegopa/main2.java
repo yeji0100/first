@@ -2,10 +2,13 @@ package fegopa;
 
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -109,6 +112,12 @@ public class main2 {
 		textField_2.setColumns(10);
 		textField_2.setBounds(25, 10, 42, 21);
 		panel_next.add(textField_2);
+		
+		String url = getClass().getResource("").getPath();
+		Image image3 = new ImageIcon(url + "image/3.png").getImage();
+		JLabel lbl_img3 = new JLabel(new ImageIcon(image3.getScaledInstance(343, 481, Image.SCALE_SMOOTH)));
+		lbl_img3.setBounds(0, 0, 343, 481);
+		frame.getContentPane().add(lbl_img3);
 		
 	}
 }
