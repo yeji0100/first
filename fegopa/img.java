@@ -25,7 +25,7 @@ public class img {
 			}
 		});
 	}
-
+//
 	public img() {
 		initialize();
 	}
