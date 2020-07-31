@@ -1,4 +1,4 @@
-package DAOVO;
+package fegopa;
 
 public class 부스VO {
 	////
@@ -24,13 +24,6 @@ public class 부스VO {
 		this.축제ID = 축제id;
 		this.주최ID = 주최id;
 	}
-	
-	
-	public 부스VO(String 부스id, String 부스상태) {
-		부스ID = 부스id;
-		this.부스상태 = 부스상태;
-	}
-
 	public String get부스ID() {
 		return 부스ID;
 	}

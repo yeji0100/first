@@ -1,7 +1,6 @@
 
 package fegopa;
 
-import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Image;
 
@@ -28,7 +27,7 @@ public class 일반신청현황조회 {
 			public void run() {
 				try {
 					일반신청현황조회 window = new 일반신청현황조회();
-					window.frame.setVisible(true); 
+					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -54,7 +53,6 @@ public class 일반신청현황조회 {
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(12, 10, 319, 461);
-		panel.setBackground(new Color(255,0,0,0));
 		frame.getContentPane().add(panel);
 		
 		JButton btn_뒤로가기 = new JButton("");

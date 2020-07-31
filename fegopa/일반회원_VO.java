@@ -1,4 +1,4 @@
-package DAOVO;
+package fegopa;
 
 public class 일반회원_VO {
 	///

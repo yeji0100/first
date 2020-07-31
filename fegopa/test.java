@@ -1,8 +1,6 @@
 package fegopa;
 
 import java.util.Scanner;
-import DAOVO.일반회원_DAO;
-import DAOVO.일반회원_VO;
 
 public class test {
 
